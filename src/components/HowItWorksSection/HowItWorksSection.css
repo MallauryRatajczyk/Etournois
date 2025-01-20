@@ -1,0 +1,64 @@
+.how-it-works {
+    position: relative;
+    width: 100%;
+    padding: 60px 20px;
+    background: linear-gradient(180deg, rgba(3, 0, 20, 0.08) 0%, rgba(3, 0, 20, 0.6) 100%);
+    background-image: url("../../Media/howitworks.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.section-title {
+    font-size: 36px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-align: center;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.step {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    width: calc(25% - 30px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.step:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.step-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.step-title {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.step-description {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: rgba(239, 237, 253, 0.7);
+}

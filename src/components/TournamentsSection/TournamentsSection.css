@@ -1,0 +1,91 @@
+.tournaments-section {
+    position: relative;
+    width: 100%;
+    padding: 60px 20px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.tournaments-title {
+    font-size: 36px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.tournaments-description {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.tournaments-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.tournament-card {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    width: calc(33.33% - 20px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tournament-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.tournament-title {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.tournament-date,
+.tournament-prize,
+.tournament-participants {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: rgba(239, 237, 253, 0.7);
+    margin-bottom: 8px;
+}
+
+.tournament-cta {
+    padding: 10px 20px;
+    background: linear-gradient(0deg, rgba(113, 47, 255, 0.12) 0%, rgba(113, 47, 255, 0.12) 100%);
+    border: 1px solid #4d2f8c;
+    border-radius: 8px;
+    color: #f4f0ff;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.tournament-cta:hover {
+    background: linear-gradient(0deg, #7130ff, #7130ff);
+    color: white;
+}

@@ -1,38 +1,154 @@
-.App {
+/* Footer */
+.footer {
+  background-color: #c2c5ca;
+  /* Fond encore plus sombre que #282c34 pour un contraste léger */
+  padding: 50px 0;
+  color: white;
   text-align: center;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  /* Ombre douce pour profondeur */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Contenu du Footer */
+.footer-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 16px;
+}
+
+.footer-logo,
+.footer-links,
+.footer-newsletter,
+.footer-socials {
+  flex: 1 1 200px;
+  max-width: 300px;
+}
+
+.footer-logo h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  /* Ombre douce pour rendre le texte plus lisible */
+}
+
+.footer-logo p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+
+/* Liens rapides */
+.footer-links h4,
+.footer-newsletter h4,
+.footer-socials h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 10px 0;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #4D2F8C;
+}
+
+/* Newsletter */
+.footer-newsletter form {
+  display: flex;
+  gap: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.newsletter-input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #4D2F8C;
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.1);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.newsletter-btn {
+  padding: 10px 20px;
+  background-color: #4D2F8C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.newsletter-btn:hover {
+  background-color: #361D66;
+}
+
+/* Icônes réseaux sociaux */
+.footer-socials .social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.footer-socials .social-icons a {
+  font-size: 24px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer-socials .social-icons a:hover {
+  color: #4D2F8C;
+}
+
+/* Section bas du footer */
+.footer-bottom {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .footer-logo h3 {
+    font-size: 28px;
+  }
+
+  .footer-links ul,
+  .footer-socials {
+    text-align: center;
+  }
+
+  .newsletter-input {
+    width: 80%;
   }
 }

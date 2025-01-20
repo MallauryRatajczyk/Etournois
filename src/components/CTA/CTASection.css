@@ -1,0 +1,77 @@
+.cta-section {
+    position: relative;
+    width: 100%;
+    padding: 60px 20px;
+    background: linear-gradient(180deg, #4d2f8c, #7130ff);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-content {
+    max-width: 800px;
+}
+
+.cta-title {
+    font-size: 36px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cta-subtitle {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-button-primary {
+    padding: 15px 40px;
+    background: white;
+    color: #4d2f8c;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.cta-button-primary:hover {
+    background: #4d2f8c;
+    color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.cta-button-secondary {
+    padding: 15px 40px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button-secondary:hover {
+    background: white;
+    color: #4d2f8c;
+    border-color: #4d2f8c;
+}

@@ -1,0 +1,92 @@
+/* Section globale */
+.statistics-section {
+    position: relative;
+    width: 100%;
+    padding: 80px 20px;
+    background: linear-gradient(180deg, rgba(3, 0, 20, 0.08) 0%, rgba(3, 0, 20, 0.8) 100%);
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.section-title {
+    font-size: 42px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.section-subtitle {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stat-card {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 40px;
+    width: calc(33.33% - 40px);
+    min-width: 250px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 0 15px rgba(113, 47, 255, 0.4);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 0 25px rgba(113, 47, 255, 0.6);
+}
+
+.stat-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: popIn 0.5s ease forwards;
+}
+
+.stat-value {
+    font-size: 60px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.stat-label {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: rgba(239, 237, 253, 0.8);
+}
+
+/* Animation */
+@keyframes popIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,103 @@
+.testimonials-section {
+    position: relative;
+    width: 100%;
+    padding: 80px 20px;
+    background: linear-gradient(180deg, rgba(3, 0, 20, 0.1) 0%, rgba(3, 0, 20, 0.7) 100%);
+    color: white;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 42px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.testimonials-container {
+    width: 100%;
+    overflow: hidden;
+    /* Cache les cartes qui dépassent */
+}
+
+.testimonials-grid {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    /* Transition fluide pour le défilement */
+}
+
+.testimonial-card {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    width: 40%;
+    /* Moins large que la moitié pour laisser de la place à l'écart */
+    margin: 0 15px;
+    /* Ajouter plus d'écart entre les cartes */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 0 15px rgba(113, 47, 255, 0.4);
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.testimonial-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.testimonial-name {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.testimonial-role {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: rgba(239, 237, 253, 0.8);
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+/* Pagination Buttons */
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination button {
+    background: #4D2F8C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 0 10px;
+}
+
+.pagination button:hover {
+    background: #7130ff;
+}
+
+.pagination button:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
